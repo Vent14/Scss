@@ -1,0 +1,100 @@
+body{
+    font-family: sans-serif;
+    h1{font-size: 3.5em;
+        h2{font-size:2.5em;
+            h3{font-size: 1.5em;
+                p{font-size: 1;
+                    ul{list-style: none;
+                        li{font-size: 1.25em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+header{
+    background-color: rgba(245, 245, 245, 245);
+    text-align: center;
+    div{
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        color:rgb(27, 25, 25);
+        font-size: 1.65em;
+        p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+                a{
+                    text-decoration: none;
+                    padding: 5px 12px;
+                    align-items: center ;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+    
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 55vh;
+    color:rgb(255, 255, 255);
+    div.iztp{
+        background-image: url(/img/lamar6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center,center;
+    }
+
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 55vh;
+    color:rgb(255, 255, 255);
+    div.atla{
+        background-image: url(/img/lamar7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center,center;
+    }
+
+}
+
+footer{
+    nav{
+        text-align: center;
+        font-weight: bold;
+        align-items: center center;
+        a{
+            text-decoration: none;
+            color: black;
+            div{
+                text-align: center;
+                align-items: center center;
+            }
+        }
+    }
+}
