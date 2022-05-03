@@ -1,3 +1,19 @@
+@import "./variables";
+@import "./footer";
+
+@mixin sucursales{
+    margin: 0;
+    padding-top: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 55vh;
+    color:rgb(243, 241, 241);
+
+}
+
 body{
     font-family: sans-serif;
     h1{font-size: 3.5em;
@@ -6,6 +22,8 @@ body{
                 p{font-size: 1;
                     ul{list-style: none;
                         li{font-size: 1.25em;
+                            a{list-style:none;
+                            }
                         }
                     }
                 }
@@ -17,84 +35,73 @@ body{
 
 
 header{
-    background-color: rgba(245, 245, 245, 245);
-    text-align: center;
-    div{
+    background-color:$secundary-color;
+    .color-acento{
+        color: $primary-color;
+        
+    }
+}
+
+header{
+    .logo{
         margin: 0;
         padding: 25px 30px;
         font-weight: bold;
         color:rgb(27, 25, 25);
-        font-size: 1.65em;
-        p{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            nav{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 10px;
-                a{
-                    text-decoration: none;
-                    padding: 5px 12px;
-                    align-items: center ;
-                    font-weight: bold;
-                    color: black;
-                }
-            }
-        }
+    font-size: 1.65em;
     }
 }
 
-    
+a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    &:hover{
+        color:$primary-color;
+    }
+}
+
+header{
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+}
 
 section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 55vh;
-    color:rgb(255, 255, 255);
+    margin: 0;
+    padding: 25px 50px;
+}
+
+section{
+    @include sucursales();
+
+    p{
+        
+        background-color: $secundary-color;
+        color: black;
+        text-align: center;
+    }
     div.iztp{
         background-image: url(/img/lamar6.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center,center;
-    }
 
+    }
+    
 }
 
 section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 55vh;
-    color:rgb(255, 255, 255);
+    
+    @include sucursales();
     div.atla{
         background-image: url(/img/lamar7.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center,center;
     }
-
-}
-
-footer{
-    nav{
-        text-align: center;
-        font-weight: bold;
-        align-items: center center;
-        a{
-            text-decoration: none;
-            color: black;
-            div{
-                text-align: center;
-                align-items: center center;
-            }
-        }
-    }
+    
 }

@@ -1,3 +1,27 @@
+footer {
+  background-color: pink;
+  margin: 0;
+  padding: 20px;
+}
+footer nav {
+  text-align: center;
+  font-weight: bold;
+  align-items: center center;
+}
+footer nav a {
+  text-decoration: none;
+  color: black;
+}
+footer nav a div .container {
+  text-align: center;
+  align-items: center center;
+}
+
+footer .container {
+  text-align: center;
+  align-items: center center;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -19,46 +43,61 @@ body h1 h2 h3 p ul {
 body h1 h2 h3 p ul li {
   font-size: 1.25em;
 }
+body h1 h2 h3 p ul li a {
+  list-style: none;
+}
 
 header {
-  background-color: rgb(245, 245, 245);
-  text-align: center;
+  background-color: pink;
 }
-header div {
+header .color-acento {
+  color: rgb(249, 144, 161);
+}
+
+header .logo {
   margin: 0;
   padding: 25px 30px;
   font-weight: bold;
   color: rgb(27, 25, 25);
   font-size: 1.65em;
 }
-header div p {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header div p nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-}
-header div p nav a {
-  text-decoration: none;
+
+a {
   padding: 5px 12px;
-  align-items: center;
+  text-decoration: none;
   font-weight: bold;
   color: black;
 }
+a:hover {
+  color: rgb(249, 144, 161);
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 section {
+  margin: 0;
+  padding: 25px 50px;
+}
+
+section {
+  margin: 0;
+  padding-top: 0 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
   height: 55vh;
-  color: rgb(255, 255, 255);
+  color: rgb(243, 241, 241);
+}
+section p {
+  background-color: pink;
+  color: black;
+  text-align: center;
 }
 section div.iztp {
   background-image: url(/img/lamar6.jpg);
@@ -68,33 +107,21 @@ section div.iztp {
 }
 
 section {
+  margin: 0;
+  padding-top: 0 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
   height: 55vh;
-  color: rgb(255, 255, 255);
+  color: rgb(243, 241, 241);
 }
 section div.atla {
   background-image: url(/img/lamar7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, center;
-}
-
-footer nav {
-  text-align: center;
-  font-weight: bold;
-  align-items: center center;
-}
-footer nav a {
-  text-decoration: none;
-  color: black;
-}
-footer nav a div {
-  text-align: center;
-  align-items: center center;
 }
 
 /*# sourceMappingURL=destino.css.map */
