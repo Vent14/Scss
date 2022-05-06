@@ -1,5 +1,9 @@
 @import "./variables";
+@import "./button";
+@import "./body";
+@import "./header";
 @import "./footer";
+@import "./laboratorios";
 
 @mixin sucursales{
     margin: 0;
@@ -12,62 +16,6 @@
     height: 55vh;
     color:rgb(243, 241, 241);
 
-}
-
-body{
-    font-family: sans-serif;
-    h1{font-size: 3.5em;
-        h2{font-size:2.5em;
-            h3{font-size: 1.5em;
-                p{font-size: 1;
-                    ul{list-style: none;
-                        li{font-size: 1.25em;
-                            a{list-style:none;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
-header{
-    background-color:$secundary-color;
-    .color-acento{
-        color: $primary-color;
-        
-    }
-}
-
-header{
-    .logo{
-        margin: 0;
-        padding: 25px 30px;
-        font-weight: bold;
-        color:rgb(27, 25, 25);
-    font-size: 1.65em;
-    }
-}
-
-a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    &:hover{
-        color:$primary-color;
-    }
-}
-
-header{
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center
-    }
 }
 
 section{
@@ -89,6 +37,7 @@ section{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center,center;
+        height: 95vh
 
     }
     
@@ -97,11 +46,61 @@ section{
 section{
     
     @include sucursales();
+    p{
+        
+        background-color: $secundary-color;
+        color: black;
+        text-align: center;
+    }
     div.atla{
         background-image: url(/img/lamar7.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center,center;
+        height: 95vh;
     }
     
+}
+
+#laboratorios{
+    color: rgb(35, 150, 232);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+
+}
+
+#laboratorios .container{
+    background-image: url(/img/lamar3.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 12px;
+}
+#laboratorios li{
+    margin: 15px 0px;
+    font-size: 4.5em;
+    font-weight: bold;
+
+}
+
+#listo{
+    background-image: url(/img/lamar8.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: rgb(12, 12, 12);
+    height: 50vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#listo button{
+    font-size: 5vw;
 }

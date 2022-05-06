@@ -1,25 +1,20 @@
-footer {
-  background-color: pink;
-  margin: 0;
-  padding: 20px;
-}
-footer nav {
-  text-align: center;
+button {
+  font-size: 1.25em;
   font-weight: bold;
-  align-items: center center;
-}
-footer nav a {
-  text-decoration: none;
-  color: black;
-}
-footer nav a div .container {
-  text-align: center;
-  align-items: center center;
+  padding: 0% 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: palevioletred;
 }
 
-footer .container {
-  text-align: center;
-  align-items: center center;
+button:hover {
+  background-color: rgb(191, 100, 131);
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0;
 }
 
 body {
@@ -47,6 +42,7 @@ body h1 h2 h3 p ul li a {
   list-style: none;
 }
 
+/*header mobil*/
 header {
   background-color: pink;
 }
@@ -73,9 +69,93 @@ a:hover {
 }
 
 header .container {
+  max-height: 1400px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 720px) {
+  /*header deskt*/
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 30px;
+  }
+}
+footer {
+  background-color: pink;
+  margin: 0;
+  padding: 20px;
+}
+footer nav {
+  text-align: center;
+  font-weight: bold;
+  align-items: center center;
+}
+footer nav a {
+  text-decoration: none;
+  color: black;
+}
+footer nav a div .container {
+  text-align: center;
+  align-items: center center;
+}
+
+footer .container {
+  text-align: center;
+  align-items: center center;
+}
+
+section#laboratorios {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+}
+section#laboratorios div {
+  margin-top: 40px;
+  background-image: url(/img/lamar3.jpg);
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  min-height: 50vh;
+}
+section#laboratorios div li {
+  padding: 10px 900px;
+  color: rgb(35, 150, 232);
+  margin: 15px 0px;
+  font-size: 4.5em;
+  font-weight: bold;
+}
+
+section#listo {
+  background-image: url(/img/lamar8.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+  height: 40vh;
+}
+section#listo h2 {
+  color: rgb(12, 12, 12);
+  font-size: 5vw;
+}
+section#listo h2 button {
+  font-size: 2vw;
 }
 
 section {
@@ -104,6 +184,7 @@ section div.iztp {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, center;
+  height: 95vh;
 }
 
 section {
@@ -117,11 +198,59 @@ section {
   height: 55vh;
   color: rgb(243, 241, 241);
 }
+section p {
+  background-color: pink;
+  color: black;
+  text-align: center;
+}
 section div.atla {
   background-image: url(/img/lamar7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, center;
+  height: 95vh;
+}
+
+#laboratorios {
+  color: rgb(35, 150, 232);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+}
+
+#laboratorios .container {
+  background-image: url(/img/lamar3.jpg);
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#laboratorios li {
+  margin: 15px 0px;
+  font-size: 4.5em;
+  font-weight: bold;
+}
+
+#listo {
+  background-image: url(/img/lamar8.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+  color: rgb(12, 12, 12);
+  height: 50vh;
+}
+
+#final h2 {
+  font-size: 9vw;
+}
+
+#listo button {
+  font-size: 5vw;
 }
 
 /*# sourceMappingURL=destino.css.map */
